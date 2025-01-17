@@ -1,0 +1,80 @@
+
+.nav-fill{
+    position: relative;
+}
+
+.main-content{
+    text-align: center;
+    min-height: 80vh;
+}
+
+.main-content::after{
+    content: "";
+    background-image: url("../images/movie6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: block;
+    width: 100%;
+    aspect-ratio: 8.8/4;
+    position: absolute;
+    top: 0px;
+    z-index: -3;
+    opacity: 0.15;
+    box-shadow: inset 0px -25px 50px #00050d;
+}
+
+.main-page-heading{
+    font-size: 1.7rem;
+    margin: 30px 0px 5px;
+}
+
+.main-page-heading + article{
+    color: #a5a5a5;
+}
+
+.main-content .live-genre{
+    position: relative;
+    text-align: left;
+    left: 31%;
+    top: 30px;
+}
+
+.movie-schedule {
+    text-align: center;
+    border-collapse: collapse;
+    margin: 40px auto;
+}
+
+.movie-schedule th,
+.movie-schedule td {
+    padding: 20px 30px;
+    border: 1px solid white;
+}
+
+.watch-live-now{
+    background-color: white;
+    display: inline-block;
+    padding: 10px 15px;
+    color: #00050d;
+    border-radius: 7px;
+    transition: transform 0.2s ease;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.sidebar-right {
+    width: 16vw;
+    top: 17%;
+    display: block;
+
+    & h3 {
+        margin: 12px 0px 3px;
+    }
+
+    & span {
+        margin-left: 12px;
+    }
+}

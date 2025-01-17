@@ -1,0 +1,203 @@
+<!-- Name: Krishan Singh -->
+<!-- Email: kmudhar3725@conestogac.on.ca -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="../styles/main.css"> <!-- Common CSS for every page -->
+    <link rel="stylesheet" href="../styles/feedback.css">
+    <script src="https://kit.fontawesome.com/6b091beed6.js" crossorigin="anonymous"></script>
+    <title>Stream - Watch your Favourite Movies and TV Shows</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-left">
+            <a href="../index.html">
+                <img src="../images/stream_no_arrow.svg" alt="" class="header-logo">
+                <article>Watch your favourite Movies and TV Shows at one place.</article>
+            </a>
+        </div>
+
+        <div class="nav-fill">
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item">
+                        <a href="../index.html">Home <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="../index.html">All</a></li>
+                            <li><a href="../index.html#movie-gallery">Movies</a></li>
+                            <li><a href="">TV Shows</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="">Store <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="">All</a></li>
+                            <li><a href="">Rent</a></li>
+                            <li><a href="">Channels</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu-item"><a href="./livetv.html">Live TV</a></li>
+                    <li class="nav-menu-item"><a href="./feedback.html">Feedback</a></li>
+                    <li class="nav-menu-item">
+                        <a href="">Categories <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <ul>
+                                <li>
+                                    <h3>Genres</h3>
+                                </li>
+                                <li><a href="">Action</a></li>
+                                <li><a href="">Anime</a></li>
+                                <li><a href="">Comedy</a></li>
+                                <li><a href="">Drama</a></li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h3>&nbsp;</h3>
+                                </li>
+                                <li><a href="">Horror</a></li>
+                                <li><a href="">Kids</a></li>
+                                <li><a href="">Romance</a></li>
+                                <li><a href="">Sci-Fi</a></li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <h3>Featured</h3>
+                                </li>
+                                <li><a href="">Sports</a></li>
+                                <li><a href="">Documentary</a></li>
+                                <li><a href="">Survival</a></li>
+                                <li><a href="">Action</a></li>
+                            </ul>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav-right">
+            <div class="nav-searchbar">
+                <input type="text" name="searchQuery" id="searchQuery" placeholder="Search Movies and TV Shows">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div class="nav-tools">
+                <div class="change-language">
+                    <span>EN</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+            <div class="profile">
+                <i class="fa-solid fa-circle-user"></i>
+                <ul class="profile-submenu">
+                    <li><a href="./signin.html">Sign In</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Free Trial</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <aside class="sidebar-left">
+            <ul>
+                <li><a href="../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="../index.html#movie-gallery"><i class="fa-solid fa-video"></i> Movies</a></li>
+                <li><a href="../index.html"><i class="fa-solid fa-fire"></i> Popular Hits</a></li>
+            </ul>
+
+            <div class="sidebar-logo">
+                <img src="../images/stream.svg" alt="Logo">
+            </div>
+        </aside>
+        <div class="main-content">
+            <h2 class="main-page-heading">Feedback!</h2>
+            <article>Let me know what did you like about my Website!</article>
+
+            <form class="feedback-form">
+                <fieldset>
+                    <legend><h3>Feedback</h3></legend>
+                    <div class="form-item">
+                        <label for="user-name">Enter your name</label>
+                        <input type="text" name="user-name" id="user-name">
+                    </div>
+                    <div class="form-item">
+                        <label for="user-email">Enter your email</label>
+                        <input type="email" name="user-email" id="user-email">
+                    </div>
+                    <div class="form-item">
+                        <label for="fav-part">Choose your favourive part of the website</label>
+                        <select name="favPart" id="fav-part">
+                            <option value="" disabled selected hidden>Click to choose options</option>
+                            <optgroup label="Webpages">
+                                <option value="fav-part1">Home Page</option>
+                                <option value="fav-part2">Login Page</option>
+                                <option value="fav-part3">Live TV</option>
+                            </optgroup>
+                            <optgroup label="Genres">
+                                <option value="fav-part4">Thriller</option>
+                                <option value="fav-part5">Romance</option>
+                                <option value="fav-part6">Suspense</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label for="fav-genres">Select your favourite Genres &lpar;You can select multiple options&rpar;</label>
+                        <select name="favGenres" id="fav-genres" multiple>
+                            <option value="fav-genre1">Suspense</option>
+                            <option value="fav-genre2">Drama</option>
+                            <option value="fav-genre3">Comedy</option>
+                            <option value="fav-genre4">Biopics</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label for="feedback">Write your feedback!</label>
+                        <textarea name="feedback" id="feedback" cols="50" rows="10"></textarea>
+                    </div>
+                    <div class="form-item">
+                        <input type="reset">
+                        <input type="submit" name="submit" id="submit">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo-container">
+                <a href="../index.html">
+                    <img src="../images/stream.svg" alt="Stream.com" class="footer-logo">
+                </a>
+            </div>
+            <div class="footer-links">
+                <div class="links-container">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html">Store</a></li>
+                        <li><a href="../index.html#popular-movies">Popular</a></li>
+                        <li><a href="../index.html#popular-movies">Live TV</a></li>
+                        <li><a href="./feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="links-container">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <a href="#">Privacy Policy</a>
+            <span>&copy; copyright 2023 | Krishan Singh and company</span>
+        </div>
+    </footer>
+</body>
+
+</html>

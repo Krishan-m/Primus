@@ -1,0 +1,70 @@
+.main-content{
+    height: 80vh;
+}
+
+.main-content::after{
+    content: "";
+    background-image: url("../images/movie3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: block;
+    width: 100%;
+    aspect-ratio: 8.8/4;
+    position: absolute;
+    top: 0px;
+    z-index: -3;
+    opacity: 0.15;
+    box-shadow: inset 0px -25px 50px #00050d;
+}
+
+.signin-form{
+    position: absolute;
+    top: 18%;
+    left: 30%;
+    border: 2px solid white;
+    background-color: #00050d68;
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+}
+
+.signin-form h3{
+    font-size: 21px;
+}
+
+.signin-form .login-prompt{
+    margin: 12px 0px;
+}
+
+.signin-form .login-prompt a{
+    color: #00a1ff;
+}
+
+.signin-form .form-item{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 20px 0px;
+}
+
+.signin-form .form-item input{
+    color: black;
+    padding: 5px 7px;
+    border-radius: 7px;
+
+    &:focus-visible{
+        outline: 2px solid #00a1ff;
+    }
+}
+
+.signin-form .form-item input[type='submit']{
+    align-self: center;
+    width: 20%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover{
+        transform: scale(1.07);
+    }
+}

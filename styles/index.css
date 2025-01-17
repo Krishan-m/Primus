@@ -1,0 +1,138 @@
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.hero-cover {
+    position: absolute;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, #00050d 40%, #00050d95 70%, #ffffff00);
+    z-index: 1;
+    opacity: 0.85;
+}
+
+.hero-cover * {
+    margin: 7px 0px;
+}
+
+.hero-cover .trend-value {
+    font-weight: 600;
+}
+/* 
+.hero-movie-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-cover .hero-movie-title>span:first-of-type {
+    letter-spacing: 7px;
+    font-weight: 600;
+}
+
+.hero-cover .hero-movie-title>span:nth-of-type(2) {
+    font-size: xx-large;
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+} */
+
+.hero-cover .hero-movie-desc {
+    font-weight: 500;
+    width: 80%;
+}
+
+.hero-cover .watch-with-stream .fa-check {
+    background-color: #0077ff;
+    color: black;
+    font-size: 12px;
+    padding: 5px;
+    padding-top: 6px;
+    margin-right: 7px;
+    clip-path: circle(40%);
+}
+
+.hero-cover .more-details{
+    display: block;
+    width: fit-content;
+    padding: 15px 20px;
+    margin: 15px 0px;
+    background-color: white;
+    color: black;
+    font-weight: 400;
+    opacity: 1;
+    border-radius: 7px;
+    transition: transform 0.2s ease;
+
+    &:hover{
+        transform: scale(1.08);
+    }
+}
+
+.hero-img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+#movie-gallery {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+
+#movie-gallery .movie-category{
+    margin-top: 40px;
+}
+
+#movie-gallery .movie-category>span {
+    color: #0077ff;
+    margin: 0px 12px 0px 40px;
+}
+
+#movie-gallery .movie-list-container {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#movie-gallery .movie-thumbnail-container {
+    position: relative;
+    min-width: 260px;
+    min-height: 140px;
+    margin: 20px 10px;
+    border-radius: 12px;
+}
+
+.movie-list-container .movie-thumbnail-container:first-child{
+    margin-left: 40px !important;
+}
+
+#movie-gallery .movie-thumbnail {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 0px;
+}
+
+#movie-gallery .movie-thumbnail img{
+    width: 100%;
+    border-radius: 12px;
+    transition: all 0.2s ease-out;
+    position: relative;
+    
+    &:hover{
+        transform: scale(1.2);
+        border-radius: 7px;
+        z-index: 2;
+    }
+}
